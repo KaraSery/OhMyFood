@@ -6,19 +6,19 @@
 </head>
 <body>
 <main>
-  <header class="restaurant-header">
+  <header class="header">
     <a href="#">back icon</a>
-    <div>LOGO</div>
+    <div class="header__logo">LOGO</div>
   </header>
-  <section class="hero-section">
-    <img src="">
+  <section class="hero">
+    <img class="her__image" src="">
   </section>
   <section class="menu-section">
-    <h1>La palette du goût <span class="like-icon">like icon</span></h1>
+    <h1 class="menu-section__title">La palette du goût <span class="like-icon">like icon</span></h1>
     <ul class="menu-list">
       <h2>ETRéES</h2>
-      <li class="menu-item">
-        <article class="name-and-description">
+      <li class="menu-list__item displayRow">
+        <article class="name-and-description displayColumn">
           <div>
             <p class="name">Fricassée d'escargots</p>
             <p class="description">Au piment d'Espelette</p>
@@ -26,8 +26,9 @@
           <p class="price">25$</p>
         </article>
       </li>
-      <li class="menu-item">
-        <article class="name-and-description">
+
+      <li class="menu-list__item displayRow">
+        <article class="name-and-description displayColumn">
           <div>
             <p class="name">Fricassée d'escargots</p>
             <p class="description">Au piment d'Espelette</p>
@@ -35,8 +36,17 @@
           <p class="price">25$</p>
         </article>
       </li>
-      <li class="menu-item">
-        <article class="name-and-description">
+      <li class="menu-list__item displayRow">
+        <article class="name-and-description displayColumn">
+          <div>
+            <p class="name">Fricassée d'escargots</p>
+            <p class="description">Au piment d'Espelette</p>
+          </div>
+          <p class="price">25$</p>
+        </article>
+      </li>
+      <li class="menu-list__item displayRow">
+        <article class="name-and-description displayColumn">
           <div>
             <p class="name">Fricassée d'escargots</p>
             <p class="description">Au piment d'Espelette</p>
@@ -45,76 +55,33 @@
         </article>
       </li>
     </ul>
-    <ul class="menu-list">
-      <h2>ETRéES</h2>
-      <li class="menu-item">
-        <article class="name-and-description">
-          <div>
-            <p class="name">Fricassée d'escargots</p>
-            <p class="description">Au piment d'Espelette</p>
-          </div>
-          <p class="price">25$</p>
-        </article>
-      </li>
-      <li class="menu-item">
-        <article class="name-and-description">
-          <div>
-            <p class="name">Fricassée d'escargots</p>
-            <p class="description">Au piment d'Espelette</p>
-          </div>
-          <p class="price">25$</p>
-        </article>
-      </li>
-      <li class="menu-item">
-        <article class="name-and-description">
-          <div>
-            <p class="name">Fricassée d'escargots</p>
-            <p class="description">Au piment d'Espelette</p>
-          </div>
-          <p class="price">25$</p>
-        </article>
-      </li>
-    </ul>
-    <ul class="menu-list">
-      <h2>ETRéES</h2>
-      <li class="menu-item">
-        <article class="name-and-description">
-          <div>
-            <p class="name">Fricassée d'escargots</p>
-            <p class="description">Au piment d'Espelette</p>
-          </div>
-          <p class="price">25$</p>
-        </article>
-      </li>
-      <li class="menu-item">
-        <article class="name-and-description">
-          <div>
-            <p class="name">Fricassée d'escargots</p>
-            <p class="description">Au piment d'Espelette</p>
-          </div>
-          <p class="price">25$</p>
-        </article>
-      </li>
-      <li class="menu-item">
-        <article class="name-and-description">
-          <div>
-            <p class="name">Fricassée d'escargots</p>
-            <p class="description">Au piment d'Espelette</p>
-          </div>
-          <p class="price">25$</p>
-        </article>
-      </li>
-    </ul>
-    <a href="#" class="action-button">Commander</a>
+
+    <a href="#" class="menu-section__button action-button">Commander</a>
   </section>
 
   <footer class="main-footer">
-    <ul>
+    <ul class="main-footer__list">
       <h2>LOGO</h2>
-      <li><a href="#"><span>icon</span>Proposer un restaurant</a></li>
-      <li><a href="#"><span>icon</span>Devenir partenaire</a></li>
-      <li><a href="#"><span>icon</span>Mentions légales</a></li>
-      <li><a href="#"><span>icon</span>Contact</a></li>
+      <li class="list__item">
+        <a class="item__link" href="#">
+          <span class="link__icon">icon</span>
+          Proposer un restaurant</a>
+      </li>
+      <li class="list__item">
+        <a class="item__link" href="#">
+          <span class="link__icon">icon</span>
+          Devenir partenaire</a>
+      </li>
+      <li class="list__item">
+        <a class="item__link" href="#">
+          <span class="link__icon">icon</span>
+          Mentions légales</a>
+      </li>
+      <li class="list__item">
+        <a class="item__link" href="#">
+          <span class="link__icon">icon</span>
+          Contact</a>
+      </li>
     </ul>
   </footer>
 </main>
