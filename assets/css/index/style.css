@@ -30,6 +30,7 @@
 }
 
 .action-button {
+  display: block;
   border-radius: 9999px;
   font-size: 16px;
   font-weight: 500;
@@ -209,7 +210,7 @@ a {
   display: none;
 }
 .restaurants .restaurant__list .restaurant-card .restaurant-card__content .content__like-icon-wrapper:has(:checked) .icon {
-  color: #9356DC;
+  color: transparent;
 }
 .restaurants .restaurant__list .restaurant-card .restaurant-card__content .content__like-icon-wrapper:has(:checked) .icon .fa-solid.fa-heart {
   display: block;
@@ -218,6 +219,10 @@ a {
 }
 .restaurants .restaurant__list .restaurant-card .restaurant-card__content .content__like-icon-wrapper:has(:checked) .icon .fa-regular.fa-heart {
   display: none;
+}
+
+.displayRow {
+  flex-direction: column;
 }
 
 .footer {

@@ -3,87 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <title>OhMyFood - La palette du goût</title>
+    <link rel="stylesheet" href="../assets/css/restaurants/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <body>
 <main>
-  <header class="header">
-    <a href="#">back icon</a>
-    <div class="header__logo">LOGO</div>
-  </header>
-  <section class="hero">
-    <img class="her__image" src="">
-  </section>
-  <section class="menu-section">
-    <h1 class="menu-section__title">La palette du goût <span class="like-icon">like icon</span></h1>
-    <ul class="menu-list">
-      <h2>ETRéES</h2>
-      <li class="menu-list__item displayRow">
-        <article class="name-and-description displayColumn">
-          <div>
-            <p class="name">Fricassée d'escargots</p>
-            <p class="description">Au piment d'Espelette</p>
-          </div>
-          <p class="price">25$</p>
-        </article>
-      </li>
-
-      <li class="menu-list__item displayRow">
-        <article class="name-and-description displayColumn">
-          <div>
-            <p class="name">Fricassée d'escargots</p>
-            <p class="description">Au piment d'Espelette</p>
-          </div>
-          <p class="price">25$</p>
-        </article>
-      </li>
-      <li class="menu-list__item displayRow">
-        <article class="name-and-description displayColumn">
-          <div>
-            <p class="name">Fricassée d'escargots</p>
-            <p class="description">Au piment d'Espelette</p>
-          </div>
-          <p class="price">25$</p>
-        </article>
-      </li>
-      <li class="menu-list__item displayRow">
-        <article class="name-and-description displayColumn">
-          <div>
-            <p class="name">Fricassée d'escargots</p>
-            <p class="description">Au piment d'Espelette</p>
-          </div>
-          <p class="price">25$</p>
-        </article>
-      </li>
-    </ul>
-
-    <a href="#" class="menu-section__button action-button">Commander</a>
-  </section>
-
-  <footer class="main-footer">
-    <ul class="main-footer__list">
-      <h2>LOGO</h2>
-      <li class="list__item">
-        <a class="item__link" href="#">
-          <span class="link__icon">icon</span>
-          Proposer un restaurant</a>
-      </li>
-      <li class="list__item">
-        <a class="item__link" href="#">
-          <span class="link__icon">icon</span>
-          Devenir partenaire</a>
-      </li>
-      <li class="list__item">
-        <a class="item__link" href="#">
-          <span class="link__icon">icon</span>
-          Mentions légales</a>
-      </li>
-      <li class="list__item">
-        <a class="item__link" href="#">
-          <span class="link__icon">icon</span>
-          Contact</a>
-      </li>
-    </ul>
-  </footer>
+    <header class="header">
+        <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+        <div class="header__logo">ohmyfood</div>
+    </header>
+    <section class="hero">
+        <img class="her__image" src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+    </section>
+    <section class="menu-section section">
+        <h1 class="section__title">
+            La palette du goût
+            <span class="like-icon">
+        <label class="like-button checkbox-hack checkbox-hack__label">
+            <input class="checkbox-hack__input" type="checkbox" name="like">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+        </label>
+      </span>
+        </h1>
+        <ul class="menu-list">
+            <h2>ETRéES</h2>
+            <li>
+                <article class="menu-list__card">
+                    <div class="name-and-description">
+                        <p class="name">Fricassée d'escargots</p>
+                        <p class="description">Au piment d'Espelette</p>
+                    </div>
+                    <p class="price">25$</p>
+                </article>
+            </li>
+            <li>
+                <article class="menu-list__card">
+                    <div class="name-and-description">
+                        <p class="name">Fricassée d'escargots</p>
+                        <p class="description">Au piment d'Espelette</p>
+                    </div>
+                    <p class="price">25$</p>
+                </article>
+            </li>
+            <li>
+                <article class="menu-list__card">
+                    <div class="name-and-description">
+                        <p class="name">Fricassée d'escargots</p>
+                        <p class="description">Au piment d'Espelette</p>
+                    </div>
+                    <p class="price">25$</p>
+                </article>
+            </li>
+            <li>
+                <article class="menu-list__card">
+                    <div class="name-and-description">
+                        <p class="name">Fricassée d'escargots</p>
+                        <p class="description">Au piment d'Espelette</p>
+                    </div>
+                    <p class="price">25$</p>
+                </article>
+            </li>
+        </ul>
+        <ul class="menu-list">
+            <h2>PLATS</h2>
+            <li>
+                <article class="menu-list__card">
+                    <div class="name-and-description">
+                        <p class="name">Fricassée d'escargots</p>
+                        <p class="description">Au piment d'Espelette</p>
+                    </div>
+                    <p class="price">25$</p>
+                </article>
+            </li>
+            <li>
+                <article class="menu-list__card">
+                    <div class="name-and-description">
+                        <p class="name">Fricassée d'escargots</p>
+                        <p class="description">Au piment d'Espelette</p>
+                    </div>
+                    <p class="price">25$</p>
+                </article>
+            </li>
+            <li>
+                <article class="menu-list__card">
+                    <div class="name-and-description">
+                        <p class="name">Fricassée d'escargots</p>
+                        <p class="description">Au piment d'Espelette</p>
+                    </div>
+                    <p class="price">25$</p>
+                </article>
+            </li>
+            <li>
+                <article class="menu-list__card">
+                    <div class="name-and-description">
+                        <p class="name">Fricassée d'escargots</p>
+                        <p class="description">Au piment d'Espelette</p>
+                    </div>
+                    <p class="price">25$</p>
+                </article>
+            </li>
+        </ul>
+        <ul class="menu-list">
+            <h2>DESSERTS</h2>
+            <li>
+                <article class="menu-list__card">
+                    <div class="name-and-description">
+                        <p class="name">Fricassée d'escargots</p>
+                        <p class="description">Au piment d'Espelette</p>
+                    </div>
+                    <p class="price">25$</p>
+                </article>
+            </li>
+            <li>
+                <article class="menu-list__card">
+                    <div class="name-and-description">
+                        <p class="name">Fricassée d'escargots</p>
+                        <p class="description">Au piment d'Espelette</p>
+                    </div>
+                    <p class="price">25$</p>
+                </article>
+            </li>
+            <li>
+                <article class="menu-list__card">
+                    <div class="name-and-description">
+                        <p class="name">Fricassée d'escargots</p>
+                        <p class="description">Au piment d'Espelette</p>
+                    </div>
+                    <p class="price">25$</p>
+                </article>
+            </li>
+            <li>
+                <article class="menu-list__card">
+                    <div class="name-and-description">
+                        <p class="name">Fricassée d'escargots</p>
+                        <p class="description">Au piment d'Espelette</p>
+                    </div>
+                    <p class="price">25$</p>
+                </article>
+            </li>
+        </ul>
+        <div class="action-wrapper">
+            <a href="#" class="menu-section__button action-button">Commander</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <ul class="link-list">
+            <h2 class="footer__title">ohmyfood</h2>
+            <li><a href="#"><span class="icon"><i class="fa-solid fa-utensils"></i></span>Proposer un restaurant</a>
+            </li>
+            <li><a href="#"><span class="icon"><i class="fa-solid fa-handshake"></i></span>Devenir partenaire</a></li>
+            <li><a href="#"><span>icon</span>Mentions légales</a></li>
+            <li><a href="#"><span>icon</span>Contact</a></li>
+        </ul>
+    </footer>
 </main>
 </body>
 </html>

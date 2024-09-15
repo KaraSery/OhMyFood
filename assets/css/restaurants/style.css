@@ -1,0 +1,207 @@
+.textCenter {
+  text-align: center;
+}
+
+.displayColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.displayRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.flexFullCenter {
+  align-items: center;
+  justify-content: center;
+}
+
+.text-lg {
+  font-size: 18px;
+}
+
+.text-md {
+  font-size: 16px;
+}
+
+.action-button {
+  display: block;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: 500;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  color: #fff;
+  padding: 16px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  text-align: center;
+}
+
+.checkbox-hack {
+  position: relative;
+}
+.checkbox-hack .checkbox-hack__input {
+  display: none;
+}
+body {
+  font-family: Roboto;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.section {
+  padding: 50px 20px;
+  margin-inline: auto;
+}
+.section .section__title {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.header .header__logo {
+  font-family: "Shrikhand", serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.hero {
+  height: 220px;
+  width: 100%;
+}
+.hero img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.menu-section {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  border-radius: 40px 40px 0px 0px;
+  background-color: #F6F6F6;
+  max-width: 800px;
+  margin-inline: auto;
+}
+.menu-section .section__title {
+  font-family: "Shrikhand", serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-section .section__title .checkbox-hack .checkbox-hack__input {
+  display: none;
+}
+.menu-section .section__title .checkbox-hack .fa-regular {
+  display: block;
+}
+.menu-section .section__title .checkbox-hack .fa-solid {
+  display: none;
+}
+.menu-section .section__title .like-button:has(:checked) {
+  color: transparent;
+}
+.menu-section .section__title .like-button:has(:checked) .fa-regular {
+  display: none;
+}
+.menu-section .section__title .like-button:has(:checked) .fa-solid.fa-heart {
+  display: block;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+}
+.menu-section .menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+}
+.menu-section .menu-list:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+.menu-section .menu-list .section__title {
+  margin-bottom: 20px;
+}
+.menu-section .menu-list h2 {
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 16px;
+  width: fit-content;
+}
+.menu-section .menu-list h2::after {
+  content: " ";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+}
+.menu-section .menu-list .menu-list__card {
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.menu-section .menu-list .menu-list__card .price {
+  align-self: end;
+}
+.menu-section .menu-list .menu-list__card .name-and-description {
+  width: 100%;
+}
+.menu-section .menu-list .menu-list__card .name-and-description .name {
+  font-size: 18px;
+  font-weight: 500;
+}
+.menu-section .menu-list .menu-list__card .name-and-description .description {
+  font-size: 15px;
+  font-weight: 300;
+}
+.menu-section .action-wrapper {
+  padding-block: 50px 0px;
+}
+
+.footer {
+  background-color: #353535;
+}
+.footer .link-list {
+  padding-block: 30px;
+  padding-inline: 25px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  gap: 16px;
+}
+@media (min-width: 1024px) {
+  .footer .link-list {
+    padding-block: 40px 15px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.footer .link-list .footer__title {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Shrikhand, serif;
+}
+.footer .link-list .icon {
+  padding-right: 7px;
+}
+
+/*# sourceMappingURL=style.css.map */
