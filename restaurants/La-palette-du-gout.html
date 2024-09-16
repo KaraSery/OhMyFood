@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood - La palette du goût</title>
     <link rel="stylesheet" href="../assets/css/restaurants/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -18,7 +19,7 @@
 <body>
 <main>
     <header class="header">
-        <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+        <a class="header__previous-link" href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
         <div class="header__logo">ohmyfood</div>
     </header>
     <section class="hero">
@@ -27,128 +28,243 @@
     <section class="menu-section section">
         <h1 class="section__title">
             La palette du goût
-            <span class="like-icon">
-        <label class="like-button checkbox-hack checkbox-hack__label">
-            <input class="checkbox-hack__input" type="checkbox" name="like">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-heart"></i>
-        </label>
-      </span>
+
+            <label class="content__like-icon-wrapper checkbox-hack checkbox-hack__label">
+                <span class="icon"><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i></span>
+                <input class="checkbox-hack__input" type="checkbox" name="like">
+            </label>
         </h1>
         <ul class="menu-list">
-            <h2>ETRéES</h2>
+            <h2>ETRÉES</h2>
             <li>
                 <article class="menu-list__card">
-                    <div class="name-and-description">
-                        <p class="name">Fricassée d'escargots</p>
-                        <p class="description">Au piment d'Espelette</p>
+                    <div class="card-content">
+                        <div class="name-and-description">
+                            <p class="name">Fricassée d'escargots</p>
+                            <p class="description">Au piment d'Espelette</p>
+                        </div>
+                        <p class="price">25$</p>
                     </div>
-                    <p class="price">25$</p>
+                    <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
+                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                    </label>
                 </article>
             </li>
             <li>
                 <article class="menu-list__card">
-                    <div class="name-and-description">
-                        <p class="name">Fricassée d'escargots</p>
-                        <p class="description">Au piment d'Espelette</p>
+                    <div class="card-content">
+                        <div class="name-and-description">
+                            <p class="name">Fricassée d'escargots</p>
+                            <p class="description">Au piment d'Espelette</p>
+                        </div>
+                        <p class="price">25$</p>
                     </div>
-                    <p class="price">25$</p>
+                    <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
+                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                    </label>
                 </article>
             </li>
             <li>
                 <article class="menu-list__card">
-                    <div class="name-and-description">
-                        <p class="name">Fricassée d'escargots</p>
-                        <p class="description">Au piment d'Espelette</p>
+                    <div class="card-content">
+                        <div class="name-and-description">
+                            <p class="name">Fricassée d'escargots</p>
+                            <p class="description">Au piment d'Espelette</p>
+                        </div>
+                        <p class="price">25$</p>
                     </div>
-                    <p class="price">25$</p>
+                    <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
+                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                    </label>
                 </article>
             </li>
             <li>
                 <article class="menu-list__card">
-                    <div class="name-and-description">
-                        <p class="name">Fricassée d'escargots</p>
-                        <p class="description">Au piment d'Espelette</p>
+                    <div class="card-content">
+                        <div class="name-and-description">
+                            <p class="name">Fricassée d'escargots</p>
+                            <p class="description">Au piment d'Espelette</p>
+                        </div>
+                        <p class="price">25$</p>
                     </div>
-                    <p class="price">25$</p>
+                    <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
+                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                    </label>
                 </article>
             </li>
-        </ul>
-        <ul class="menu-list">
             <h2>PLATS</h2>
+
             <li>
                 <article class="menu-list__card">
-                    <div class="name-and-description">
-                        <p class="name">Fricassée d'escargots</p>
-                        <p class="description">Au piment d'Espelette</p>
+                    <div class="card-content">
+                        <div class="name-and-description">
+                            <p class="name">Fricassée d'escargots</p>
+                            <p class="description">Au piment d'Espelette</p>
+                        </div>
+                        <p class="price">25$</p>
                     </div>
-                    <p class="price">25$</p>
+                    <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
+                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                    </label>
                 </article>
             </li>
             <li>
                 <article class="menu-list__card">
-                    <div class="name-and-description">
-                        <p class="name">Fricassée d'escargots</p>
-                        <p class="description">Au piment d'Espelette</p>
+                    <div class="card-content">
+                        <div class="name-and-description">
+                            <p class="name">Fricassée d'escargots</p>
+                            <p class="description">Au piment d'Espelette</p>
+                        </div>
+                        <p class="price">25$</p>
                     </div>
-                    <p class="price">25$</p>
+                    <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
+                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                    </label>
                 </article>
             </li>
             <li>
                 <article class="menu-list__card">
-                    <div class="name-and-description">
-                        <p class="name">Fricassée d'escargots</p>
-                        <p class="description">Au piment d'Espelette</p>
+                    <div class="card-content">
+                        <div class="name-and-description">
+                            <p class="name">Fricassée d'escargots</p>
+                            <p class="description">Au piment d'Espelette</p>
+                        </div>
+                        <p class="price">25$</p>
                     </div>
-                    <p class="price">25$</p>
+                    <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
+                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                    </label>
                 </article>
             </li>
             <li>
                 <article class="menu-list__card">
-                    <div class="name-and-description">
-                        <p class="name">Fricassée d'escargots</p>
-                        <p class="description">Au piment d'Espelette</p>
+                    <div class="card-content">
+                        <div class="name-and-description">
+                            <p class="name">Fricassée d'escargots</p>
+                            <p class="description">Au piment d'Espelette</p>
+                        </div>
+                        <p class="price">25$</p>
                     </div>
-                    <p class="price">25$</p>
+                    <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
+                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                    </label>
                 </article>
             </li>
-        </ul>
-        <ul class="menu-list">
             <h2>DESSERTS</h2>
             <li>
                 <article class="menu-list__card">
-                    <div class="name-and-description">
-                        <p class="name">Fricassée d'escargots</p>
-                        <p class="description">Au piment d'Espelette</p>
+                    <div class="card-content">
+                        <div class="name-and-description">
+                            <p class="name">Fricassée d'escargots</p>
+                            <p class="description">Au piment d'Espelette</p>
+                        </div>
+                        <p class="price">25$</p>
                     </div>
-                    <p class="price">25$</p>
+                    <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
+                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                    </label>
                 </article>
             </li>
             <li>
                 <article class="menu-list__card">
-                    <div class="name-and-description">
-                        <p class="name">Fricassée d'escargots</p>
-                        <p class="description">Au piment d'Espelette</p>
+                    <div class="card-content">
+                        <div class="name-and-description">
+                            <p class="name">Fricassée d'escargots</p>
+                            <p class="description">Au piment d'Espelette</p>
+                        </div>
+                        <p class="price">25$</p>
                     </div>
-                    <p class="price">25$</p>
+                    <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
+                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                    </label>
                 </article>
             </li>
             <li>
                 <article class="menu-list__card">
-                    <div class="name-and-description">
-                        <p class="name">Fricassée d'escargots</p>
-                        <p class="description">Au piment d'Espelette</p>
+                    <div class="card-content">
+                        <div class="name-and-description">
+                            <p class="name">Fricassée d'escargots</p>
+                            <p class="description">Au piment d'Espelette</p>
+                        </div>
+                        <p class="price">25$</p>
                     </div>
-                    <p class="price">25$</p>
+                    <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
+                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                    </label>
                 </article>
             </li>
             <li>
                 <article class="menu-list__card">
-                    <div class="name-and-description">
-                        <p class="name">Fricassée d'escargots</p>
-                        <p class="description">Au piment d'Espelette</p>
+                    <div class="card-content">
+                        <div class="name-and-description">
+                            <p class="name">Fricassée d'escargots</p>
+                            <p class="description">Au piment d'Espelette</p>
+                        </div>
+                        <p class="price">25$</p>
                     </div>
-                    <p class="price">25$</p>
+                    <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
+                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                    </label>
                 </article>
             </li>
         </ul>

@@ -1,4 +1,56 @@
 @import "../base.scss";
+.main-loader {
+  animation: main-wrapper .3s ease 3s forwards;
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  .loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-100%);
+    h1 {
+      font-family: "Shrikhand", serif;
+      margin-bottom: 15px;
+    }
+    .loader {
+      animation: loader 2s linear infinite;
+      color: black;
+      margin-bottom: 10px;
+    }
+    p:first-of-type {
+      margin-bottom: 5px;
+    }
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes main-wrapper {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+
 .header {
   .header__title {
     z-index: 100;
@@ -117,39 +169,10 @@
             font-weight: 300;
           }
         }
-        .content__like-icon-wrapper {
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          font-size: 24px;
-          .fa-regular.fa-heart {
-            display: block;
-          }
-          .fa-solid.fa-heart {
-            display: none;
-          }
-        }
-        .content__like-icon-wrapper:has(:checked) {
-          .icon {
-            color: transparent;
-            .fa-solid.fa-heart {
-              display: block;
-              background: linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
-              background-clip: text;
-            }
-            .fa-regular.fa-heart {
-              display: none;
-            }
-          }
-        }
+
       }
     }
   }
-}
-.displayRow {
-  flex-direction: column;
 }
 .footer {
   background-color: $light-black;

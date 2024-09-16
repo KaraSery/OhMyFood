@@ -10,13 +10,15 @@ $grey-700: #7E7E7E;
 
 $light-black: #353535;
 
-$shadow-md: 0px 2px 4px 0px #00000026;
-$shadow-lg: 0px 4px 4px 0px #00000026;
+$shadow-md: 0px 4px 10px 0px #00000040;
+$shadow-lg: 0px 4px 15px 0px #00000059;
+
 
 $text-md: 16px;
 $text-lg: 18px;
 
-
+$action-button-gradient-hover: linear-gradient(200.64deg, $color-primary -5.2%, $color-secondary 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+$action-button-gradient : linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
 @mixin text-center {
   text-align: center;
 }
@@ -46,15 +48,24 @@ $text-lg: 18px;
 }
 
 .action-button {
+  transition: all 0.2s;
   display: block;
   border-radius: 9999px;
   font-size: $text-md;
   font-weight: 500;
-  background: linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
+  background: $action-button-gradient;
   color: $white;
   padding: 16px;
   box-shadow: $shadow-md;
   @include text-center;
+}
+.action-button:hover {
+  filter: brightness(1.1);
+  box-shadow: $shadow-lg
+}
+.action-button:active {
+  filter: brightness(1);
+  box-shadow: $shadow-md;
 }
 .checkbox-hack {
   position: relative;
@@ -66,6 +77,50 @@ $text-lg: 18px;
   }
 }
 
+.content__like-icon-wrapper {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  .icon {
+    i {
+      transition: opacity 200ms;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    .fa-solid {
+      background: linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
+      background-clip: text;
+      color: transparent;
+    }
+  }
+  &:has(:not(:checked)) {
+    .icon {
+      .fa-solid {
+        opacity: 0;
+      }
+      .fa-regular {
+        opacity: 1;
+      }
+    }
+  }
+  &:has(:checked) {
+    .icon {
+      .fa-solid {
+        opacity: 1;
+      }
+      .fa-regular {
+        opacity: 0;
+      }
+    }
+  }
+}
+
 body {
   font-family: Roboto;
 }
@@ -73,6 +128,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+main {
+  overflow: hidden;
 }
 a {
   text-decoration: none;
