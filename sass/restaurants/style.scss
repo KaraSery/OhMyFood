@@ -22,6 +22,10 @@
   justify-content: center;
   align-items: center;
   padding: 17px;
+  box-shadow: $shadow-light-sm;
+  @media (min-width: 1024px) {
+    height: 96px;
+  }
   .header__previous-link {
     position: absolute;
     left: 17px;
@@ -31,6 +35,9 @@
     font-family: "Shrikhand", serif;
     font-size: 30px;
     font-weight: 500;
+    @media (min-width: 1024px) {
+      font-size: 34px;
+    }
   }
 }
 
@@ -53,12 +60,20 @@
   background-color: $gray-200;
   max-width: 1024px;
   margin-inline: auto;
+  padding-top: 30px;
+  @media (min-width: 1024px) {
+    padding-top: 50px;
+  }
   .section__title {
     font-family: "Shrikhand", serif;
     font-weight: 500;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media (min-width: 1024px) {
+      justify-content: center;
+      gap: 24px;
+    }
   }
   .menu-list {
     @include menu-list-item-counter();
@@ -74,12 +89,12 @@
     .section__title {
       margin-bottom: 20px;
     }
-    h2 {
+    .menu-list__title {
       text-transform: capitalize;
       font-weight: 300;
       font-size: 16px;
       width: fit-content;
-      padding-block: 35px 15px;
+      padding-top: 40px;
       &:first-child {
         padding-top: 0;
       }
@@ -99,7 +114,7 @@
       transform: translateX(120%);
       opacity: 0;
       background-color: $white;
-      box-shadow: $shadow-md;
+      box-shadow: $shadow-extra-light-lg;
       border-radius: 15px;
       display: flex;
 
@@ -167,33 +182,6 @@
   }
 }
 
-.footer {
-  background-color: $light-black;
-  .link-list {
-    padding-block: 30px;
-    padding-inline: 25px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    font-weight: 400;
-    color: $white;
-    gap: 16px;
-    @media (min-width: 1024px) {
-      padding-block: 40px 15px;
-      display: flex;
-      flex-direction: row-reverse;
-    }
-    .footer__title {
-      font-size: 18px;
-      font-weight: 500;
-      font-family: Shrikhand, serif;
-    }
-    .icon {
-      padding-right: 7px;
-    }
-  }
-}
 
 @keyframes menu-list-item-begin {
   0% {

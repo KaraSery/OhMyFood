@@ -10,11 +10,31 @@ $grey-700: #7E7E7E;
 
 $light-black: #353535;
 
-$shadow-md: 0px 4px 10px 0px #00000040;
-$shadow-lg: 0px 4px 15px 0px #00000059;
+
+// black 10%
+$shadow-extra-light-lg: 0px 4px 15px 0px #0000001A;
 
 
-$text-md: 16px;
+// black 15%
+$shadow-light-sm: 0px 2px 4px 0px #00000026;
+$shadow-light-md: 0px 4px 4px 0px #00000026;
+$shadow-light-lg: 0px 4px 15px 0px #00000026;
+
+// black 25%
+$shadow-md: 0px 4px 4px 0px #00000040;
+$shadow-lg: 0px 4px 10px 0px #00000040;
+
+
+// black 35%
+$shadow-dark-lg: 0px 4px 15px 0px #00000059;
+
+
+
+
+
+
+
+$text-md: 15px;
 $text-lg: 18px;
 
 $action-button-gradient-hover: linear-gradient(200.64deg, $color-primary -5.2%, $color-secondary 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
@@ -47,7 +67,7 @@ $action-button-gradient : linear-gradient(193.33deg, $color-primary -11.44%, $co
   font-size: $text-md;
 }
 
-.action-button {
+  .action-button {
   transition: all 0.2s;
   display: block;
   border-radius: 9999px;
@@ -56,16 +76,16 @@ $action-button-gradient : linear-gradient(193.33deg, $color-primary -11.44%, $co
   background: $action-button-gradient;
   color: $white;
   padding: 16px;
-  box-shadow: $shadow-md;
+  box-shadow: $shadow-lg;
   @include text-center;
 }
 .action-button:hover {
   filter: brightness(1.1);
-  box-shadow: $shadow-lg
+  box-shadow: $shadow-dark-lg
 }
 .action-button:active {
   filter: brightness(1);
-  box-shadow: $shadow-md;
+  box-shadow: $shadow-lg;
 }
 .checkbox-hack {
   position: relative;
@@ -143,5 +163,51 @@ a {
 
     margin-bottom: 20px;
     font-size: 24px;
+  }
+}
+
+
+.footer {
+  background-color: $light-black;
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  gap: 25px;
+
+  @media (min-width: 1024px) {
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+  .footer__title {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Shrikhand, serif;
+  }
+  .list_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 35px;
+    }
+
+    .link-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+      color: $white;
+      gap: 7px;
+      @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+      }
+      .icon {
+        padding-right: 7px;
+      }
+    }
   }
 }

@@ -38,18 +38,18 @@
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   color: #fff;
   padding: 16px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   text-align: center;
 }
 
 .action-button:hover {
   filter: brightness(1.1);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
 }
 
 .action-button:active {
   filter: brightness(1);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .checkbox-hack {
@@ -120,55 +120,6 @@ a {
   font-size: 24px;
 }
 
-.footer {
-  background-color: #353535;
-  padding: 30px 25px;
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  gap: 25px;
-}
-@media (min-width: 1024px) {
-  .footer {
-    align-items: center;
-    flex-direction: row-reverse;
-    gap: 50px;
-  }
-}
-.footer .footer__title {
-  font-size: 18px;
-  font-weight: 500;
-  font-family: Shrikhand, serif;
-}
-.footer .list_wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-@media (min-width: 1024px) {
-  .footer .list_wrapper {
-    flex-direction: row;
-    gap: 35px;
-  }
-}
-.footer .list_wrapper .link-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  font-size: 16px;
-  color: #fff;
-  gap: 7px;
-}
-@media (min-width: 1024px) {
-  .footer .list_wrapper .link-list {
-    display: flex;
-    flex-direction: row;
-  }
-}
-.footer .list_wrapper .link-list .icon {
-  padding-right: 7px;
-}
-
 .header {
   position: relative;
   display: flex;
@@ -176,11 +127,6 @@ a {
   align-items: center;
   padding: 17px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
-}
-@media (min-width: 1024px) {
-  .header {
-    height: 96px;
-  }
 }
 .header .header__previous-link {
   position: absolute;
@@ -191,11 +137,6 @@ a {
   font-family: "Shrikhand", serif;
   font-size: 30px;
   font-weight: 500;
-}
-@media (min-width: 1024px) {
-  .header .header__logo {
-    font-size: 34px;
-  }
 }
 
 .hero {
@@ -216,12 +157,6 @@ a {
   background-color: #F6F6F6;
   max-width: 1024px;
   margin-inline: auto;
-  padding-top: 30px;
-}
-@media (min-width: 1024px) {
-  .menu-section {
-    padding-top: 50px;
-  }
 }
 .menu-section .section__title {
   font-family: "Shrikhand", serif;
@@ -229,12 +164,6 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-@media (min-width: 1024px) {
-  .menu-section .section__title {
-    justify-content: center;
-    gap: 24px;
-  }
 }
 .menu-section .menu-list {
   display: flex;
@@ -373,17 +302,17 @@ a {
 .menu-section .menu-list .section__title {
   margin-bottom: 20px;
 }
-.menu-section .menu-list .menu-list__title {
+.menu-section .menu-list h2 {
   text-transform: capitalize;
   font-weight: 300;
   font-size: 16px;
   width: fit-content;
-  padding-top: 40px;
+  padding-block: 35px 15px;
 }
-.menu-section .menu-list .menu-list__title:first-child {
+.menu-section .menu-list h2:first-child {
   padding-top: 0;
 }
-.menu-section .menu-list .menu-list__title::after {
+.menu-section .menu-list h2::after {
   content: " ";
   display: block;
   width: 40px;
@@ -398,7 +327,7 @@ a {
   transform: translateX(120%);
   opacity: 0;
   background-color: #fff;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 15px;
   display: flex;
   font-size: 15px;
@@ -458,6 +387,36 @@ a {
 .menu-section .action-wrapper .action-button {
   width: 180px;
   margin: auto;
+}
+
+.footer {
+  background-color: #353535;
+}
+.footer .link-list {
+  padding-block: 30px;
+  padding-inline: 25px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  gap: 16px;
+}
+@media (min-width: 1024px) {
+  .footer .link-list {
+    padding-block: 40px 15px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.footer .link-list .footer__title {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Shrikhand, serif;
+}
+.footer .link-list .icon {
+  padding-right: 7px;
 }
 
 @keyframes menu-list-item-begin {

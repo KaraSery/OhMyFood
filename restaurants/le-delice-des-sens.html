@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../assets/css/restaurants/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
           integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+          crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -22,24 +22,24 @@
         <a class="header__previous-link" href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
         <div class="header__logo">ohmyfood</div>
     </header>
-    <section class="hero">
-        <img class="her__image" src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-    </section>
+    <div class="hero">
+        <img class="her__image" alt="Restaurant Le délice des sens" src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+    </div>
     <section class="menu-section section">
-        <h1 class="section__title">
+        <h2 class="section__title">
             Le delice des sens
             <label class="content__like-icon-wrapper checkbox-hack checkbox-hack__label">
                 <span class="icon"><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i></span>
                 <input class="checkbox-hack__input" type="checkbox" name="like">
             </label>
-        </h1>
+        </h2>
         <ul class="menu-list">
-            <h2>ETRÉES</h2>
+            <li class="menu-list__title">ETRÉES</li>
             <li>
                 <article class="menu-list__card">
                     <div class="card-content">
                         <div class="name-and-description">
-                            <p class="name">Tartare de thon</p>
+                            <h3 class="name">Tartare de thon</h3>
                             <p class="description">Assaisonné au yuzu</p>
                         </div>
                         <p class="price">25€</p>
@@ -58,7 +58,7 @@
                 <article class="menu-list__card">
                     <div class="card-content">
                         <div class="name-and-description">
-                            <p class="name">Bouchée de homard croustillant </p>
+                            <h3 class="name">Bouchée de homard croustillant </h3>
                             <p class="description">Et sa farandole de petits légumes</p>
                         </div>
                         <p class="price">35€</p>
@@ -77,7 +77,7 @@
                 <article class="menu-list__card">
                     <div class="card-content">
                         <div class="name-and-description">
-                            <p class="name">Velouté de cèpes </p>
+                            <h3 class="name">Velouté de cèpes </h3>
                             <p class="description">Aux truffes</p>
                         </div>
                         <p class="price">20€</p>
@@ -92,13 +92,13 @@
                     </label>
                 </article>
             </li>
-            <h2>PLATS</h2>
+            <li class="menu-list__title">PLATS</li>
 
             <li>
                 <article class="menu-list__card">
                     <div class="card-content">
                         <div class="name-and-description">
-                            <p class="name">Poulet rôti aux herbes de Provence </p>
+                            <h3 class="name">Poulet rôti aux herbes de Provence </h3>
                             <p class="description">Et sa crème de truffe</p>
                         </div>
                         <p class="price">40€</p>
@@ -117,7 +117,7 @@
                 <article class="menu-list__card">
                     <div class="card-content">
                         <div class="name-and-description">
-                            <p class="name">Langouste rôtie </p>
+                            <h3 class="name">Langouste rôtie </h3>
                             <p class="description">Et ses légumes de saison</p>
                         </div>
                         <p class="price">35€</p>
@@ -136,7 +136,7 @@
                 <article class="menu-list__card">
                     <div class="card-content">
                         <div class="name-and-description">
-                            <p class="name">Côte de bœuf Angus </p>
+                            <h3 class="name">Côte de bœuf Angus </h3>
                             <p class="description">Et sa purée de panais</p>
                         </div>
                         <p class="price">44€</p>
@@ -151,12 +151,12 @@
                     </label>
                 </article>
             </li>
-            <h2>DESSERTS</h2>
+            <li class="menu-list__title">DESSERTS</li>
             <li>
                 <article class="menu-list__card">
                     <div class="card-content">
                         <div class="name-and-description">
-                            <p class="name">Farandole de desserts</p>
+                            <h3 class="name">Farandole de desserts</h3>
                             <p class="description">Du chef</p>
                         </div>
                         <p class="price">18€</p>
@@ -175,7 +175,7 @@
                 <article class="menu-list__card">
                     <div class="card-content">
                         <div class="name-and-description">
-                            <p class="name">Crème brulée </p>
+                            <h3 class="name">Crème brulée </h3>
                             <p class="description">Revisitée</p>
                         </div>
                         <p class="price">22€</p>
@@ -194,7 +194,7 @@
                 <article class="menu-list__card">
                     <div class="card-content">
                         <div class="name-and-description">
-                            <p class="name">Tiramisu</p>
+                            <h3 class="name">Tiramisu</h3>
                             <p class="description">À la noisette</p>
                         </div>
                         <p class="price">23€</p>
@@ -215,14 +215,17 @@
         </div>
     </section>
     <footer class="footer">
-        <ul class="link-list">
-            <h2 class="footer__title">ohmyfood</h2>
-            <li><a href="#"><span class="icon"><i class="fa-solid fa-utensils"></i></span>Proposer un restaurant</a>
-            </li>
-            <li><a href="#"><span class="icon"><i class="fa-solid fa-handshake"></i></span>Devenir partenaire</a></li>
-            <li><a href="#"><span>icon</span>Mentions légales</a></li>
-            <li><a href="#"><span>icon</span>Contact</a></li>
-        </ul>
+        <h3 class="footer__title">ohmyfood</h3>
+        <div class="list_wrapper">
+            <ul class="link-list">
+                <li><a href="#"><span class="icon"><i class="fa-solid fa-utensils"></i></span>Proposer un restaurant</a></li>
+                <li><a href="#"><span class="icon"><i class="fa-solid fa-handshake"></i></span>Devenir partenaire</a></li>
+            </ul>
+            <ul class="link-list">
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </footer>
 </main>
 </body>
