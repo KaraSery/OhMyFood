@@ -1,0 +1,41 @@
+@keyframes menu-list-item-begin {
+  0% {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  85% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes choice-select {
+  0% {
+    padding-inline: 0px;
+  }
+  100% {
+    padding-inline: 15px;
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes main-wrapper {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}

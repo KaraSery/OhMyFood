@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood - La palette du goût</title>
-    <link rel="stylesheet" href="../assets/css/restaurants/style.css">
+    <link rel="stylesheet" href="../assets/css/restaurants.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
           integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
           crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -17,222 +17,225 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <body>
-<main>
+<div class="main-container">
+
     <header class="header">
         <a class="header__previous-link" href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
         <div class="header__logo">ohmyfood</div>
     </header>
-    <div class="hero">
-        <img class="her__image" alt="Restaurant La note enchantée" src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-    </div>
-    <section class="menu-section section">
-        <h2 class="section__title">
-            La note enchantée
-            <label class="content__like-icon-wrapper checkbox-hack checkbox-hack__label">
-                <span class="icon"><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i></span>
-                <input class="checkbox-hack__input" type="checkbox" name="like">
-            </label>
-        </h2>
-        <ul class="menu-list">
-            <li class="menu-list__title">ETRÉES</li>
-            <li>
-                <article class="menu-list__card">
-                    <div class="card-content">
-                        <div class="name-and-description">
-                            <h3 class="name">Ravioles de foie gras </h3>
-                            <p class="description">Accompagnées de leur crème à la truffe</p>
-                        </div>
-                        <p class="price">25€</p>
-                    </div>
-                    <div class="is-selected">
-                        <span class="icon">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </div>
-                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
-                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
-                    </label>
-                </article>
-            </li>
-            <li>
-                <article class="menu-list__card">
-                    <div class="card-content">
-                        <div class="name-and-description">
-                            <h3 class="name">Caviar osciètre</h3>
-                            <p class="description">Sur blini à la farine de blé noir</p>
-                        </div>
-                        <p class="price">35€</p>
-                    </div>
-                    <div class="is-selected">
-                        <span class="icon">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </div>
-                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
-                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
-                    </label>
-                </article>
-            </li>
-            <li>
-                <article class="menu-list__card">
-                    <div class="card-content">
-                        <div class="name-and-description">
-                            <h3 class="name">Homard et espuma de potiron</h3>
-                            <p class="description">Marinés aux zestes d'orange</p>
-                        </div>
-                        <p class="price">20€</p>
-                    </div>
-                    <div class="is-selected">
-                        <span class="icon">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </div>
-                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
-                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
-                    </label>
-                </article>
-            </li>
-            <li>
-                <article class="menu-list__card">
-                    <div class="card-content">
-                        <div class="name-and-description">
-                            <h3 class="name">Foie gras de canard cuit entier</h3>
-                            <p class="description">Confiture de figue et pain toasté</p>
-                        </div>
-                        <p class="price">35€</p>
-                    </div>
-                    <div class="is-selected">
-                        <span class="icon">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </div>
-                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
-                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
-                    </label>
-                </article>
-            </li>
-            <li class="menu-list__title">PLATS</li>
-
-            <li>
-                <article class="menu-list__card">
-                    <div class="card-content">
-                        <div class="name-and-description">
-                            <h3 class="name">Noix de coquilles Saint-Jacques</h3>
-                            <p class="description">Sur lit de purée de céleri-rave</p>
-                        </div>
-                        <p class="price">40€</p>
-                    </div>
-                    <div class="is-selected">
-                        <span class="icon">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </div>
-                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
-                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
-                    </label>
-                </article>
-            </li>
-            <li>
-                <article class="menu-list__card">
-                    <div class="card-content">
-                        <div class="name-and-description">
-                            <h3 class="name">Langoustine poêlée</h3>
-                            <p class="description">Purée de patate douce</p>
-                        </div>
-                        <p class="price">35€</p>
-                    </div>
-                    <div class="is-selected">
-                        <span class="icon">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </div>
-                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
-                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
-                    </label>
-                </article>
-            </li>
-            <li>
-                <article class="menu-list__card">
-                    <div class="card-content">
-                        <div class="name-and-description">
-                            <h3 class="name">Mijoté de queue de bœuf</h3>
-                            <p class="description">Et riz sauvage aux zestes de citron</p>
-                        </div>
-                        <p class="price">44€</p>
-                    </div>
-                    <div class="is-selected">
-                        <span class="icon">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </div>
-                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
-                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
-                    </label>
-                </article>
-            </li>
-            <li class="menu-list__title">DESSERTS</li>
-            <li>
-                <article class="menu-list__card">
-                    <div class="card-content">
-                        <div class="name-and-description">
-                            <h3 class="name">Macaron noisette et chocolat</h3>
-                            <p class="description">Glace au caramel brun et sel de Guérande</p>
-                        </div>
-                        <p class="price">18€</p>
-                    </div>
-                    <div class="is-selected">
-                        <span class="icon">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </div>
-                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
-                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
-                    </label>
-                </article>
-            </li>
-            <li>
-                <article class="menu-list__card">
-                    <div class="card-content">
-                        <div class="name-and-description">
-                            <h3 class="name">Baba au rhum revisité</h3>
-                            <p class="description">Avec son coulis de citron</p>
-                        </div>
-                        <p class="price">22€</p>
-                    </div>
-                    <div class="is-selected">
-                        <span class="icon">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </div>
-                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
-                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
-                    </label>
-                </article>
-            </li>
-            <li>
-                <article class="menu-list__card">
-                    <div class="card-content">
-                        <div class="name-and-description">
-                            <h3 class="name">Tarte au citron meringuée </h3>
-                            <p class="description">Déstructurée</p>
-                        </div>
-                        <p class="price">23€</p>
-                    </div>
-                    <div class="is-selected">
-                        <span class="icon">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </span>
-                    </div>
-                    <label class="choice__checkbox checkbox-hack checkbox-hack__label">
-                        <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
-                    </label>
-                </article>
-            </li>
-        </ul>
-        <div class="action-wrapper">
-            <a href="#" class="menu-section__button action-button">Commander</a>
+    <main>
+        <div class="hero">
+            <img class="her__image" alt="Restaurant La note enchantée" src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
         </div>
-    </section>
+        <section class="menu-section section">
+            <h2 class="section__title">
+                La note enchantée
+                <label class="content__like-icon-wrapper checkbox-hack checkbox-hack__label">
+                    <span class="icon"><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i></span>
+                    <input class="checkbox-hack__input" type="checkbox" name="like">
+                </label>
+            </h2>
+            <ul class="menu-list">
+                <li class="menu-list__title">ETRÉES</li>
+                <li>
+                    <article class="menu-list__card">
+                        <div class="card-content">
+                            <div class="name-and-description">
+                                <h3 class="name">Ravioles de foie gras </h3>
+                                <p class="description">Accompagnées de leur crème à la truffe</p>
+                            </div>
+                            <p class="price">25€</p>
+                        </div>
+                        <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                        </div>
+                        <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                            <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                        </label>
+                    </article>
+                </li>
+                <li>
+                    <article class="menu-list__card">
+                        <div class="card-content">
+                            <div class="name-and-description">
+                                <h3 class="name">Caviar osciètre</h3>
+                                <p class="description">Sur blini à la farine de blé noir</p>
+                            </div>
+                            <p class="price">35€</p>
+                        </div>
+                        <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                        </div>
+                        <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                            <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                        </label>
+                    </article>
+                </li>
+                <li>
+                    <article class="menu-list__card">
+                        <div class="card-content">
+                            <div class="name-and-description">
+                                <h3 class="name">Homard et espuma de potiron</h3>
+                                <p class="description">Marinés aux zestes d'orange</p>
+                            </div>
+                            <p class="price">20€</p>
+                        </div>
+                        <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                        </div>
+                        <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                            <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                        </label>
+                    </article>
+                </li>
+                <li>
+                    <article class="menu-list__card">
+                        <div class="card-content">
+                            <div class="name-and-description">
+                                <h3 class="name">Foie gras de canard cuit entier</h3>
+                                <p class="description">Confiture de figue et pain toasté</p>
+                            </div>
+                            <p class="price">35€</p>
+                        </div>
+                        <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                        </div>
+                        <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                            <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                        </label>
+                    </article>
+                </li>
+                <li class="menu-list__title">PLATS</li>
+
+                <li>
+                    <article class="menu-list__card">
+                        <div class="card-content">
+                            <div class="name-and-description">
+                                <h3 class="name">Noix de coquilles Saint-Jacques</h3>
+                                <p class="description">Sur lit de purée de céleri-rave</p>
+                            </div>
+                            <p class="price">40€</p>
+                        </div>
+                        <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                        </div>
+                        <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                            <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                        </label>
+                    </article>
+                </li>
+                <li>
+                    <article class="menu-list__card">
+                        <div class="card-content">
+                            <div class="name-and-description">
+                                <h3 class="name">Langoustine poêlée</h3>
+                                <p class="description">Purée de patate douce</p>
+                            </div>
+                            <p class="price">35€</p>
+                        </div>
+                        <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                        </div>
+                        <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                            <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                        </label>
+                    </article>
+                </li>
+                <li>
+                    <article class="menu-list__card">
+                        <div class="card-content">
+                            <div class="name-and-description">
+                                <h3 class="name">Mijoté de queue de bœuf</h3>
+                                <p class="description">Et riz sauvage aux zestes de citron</p>
+                            </div>
+                            <p class="price">44€</p>
+                        </div>
+                        <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                        </div>
+                        <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                            <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                        </label>
+                    </article>
+                </li>
+                <li class="menu-list__title">DESSERTS</li>
+                <li>
+                    <article class="menu-list__card">
+                        <div class="card-content">
+                            <div class="name-and-description">
+                                <h3 class="name">Macaron noisette et chocolat</h3>
+                                <p class="description">Glace au caramel brun et sel de Guérande</p>
+                            </div>
+                            <p class="price">18€</p>
+                        </div>
+                        <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                        </div>
+                        <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                            <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                        </label>
+                    </article>
+                </li>
+                <li>
+                    <article class="menu-list__card">
+                        <div class="card-content">
+                            <div class="name-and-description">
+                                <h3 class="name">Baba au rhum revisité</h3>
+                                <p class="description">Avec son coulis de citron</p>
+                            </div>
+                            <p class="price">22€</p>
+                        </div>
+                        <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                        </div>
+                        <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                            <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                        </label>
+                    </article>
+                </li>
+                <li>
+                    <article class="menu-list__card">
+                        <div class="card-content">
+                            <div class="name-and-description">
+                                <h3 class="name">Tarte au citron meringuée </h3>
+                                <p class="description">Déstructurée</p>
+                            </div>
+                            <p class="price">23€</p>
+                        </div>
+                        <div class="is-selected">
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                        </div>
+                        <label class="choice__checkbox checkbox-hack checkbox-hack__label">
+                            <input type="checkbox" name="menu-choice" class="checkbox-hack__input">
+                        </label>
+                    </article>
+                </li>
+            </ul>
+            <div class="action-wrapper">
+                <a href="#" class="menu-section__button action-button">Commander</a>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <h3 class="footer__title">ohmyfood</h3>
         <div class="list_wrapper">
@@ -246,6 +249,7 @@
             </ul>
         </div>
     </footer>
-</main>
+</div>
+
 </body>
 </html>

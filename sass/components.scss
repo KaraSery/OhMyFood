@@ -1,0 +1,119 @@
+@import "variables";
+@import "placeholder";
+
+.action-button {
+  transition: all 0.2s;
+  display: block;
+  border-radius: 9999px;
+  font-size: $text-md;
+  font-weight: 500;
+  background: $action-button-gradient;
+  color: $white;
+  padding: 16px;
+  box-shadow: $shadow-lg;
+  @extend %text-center;
+}
+.action-button:hover {
+  filter: brightness(1.1);
+  box-shadow: $shadow-dark-lg
+}
+.action-button:active {
+  filter: brightness(1);
+  box-shadow: $shadow-lg;
+}
+.checkbox-hack {
+  position: relative;
+  .checkbox-hack__input {
+    display: none;
+  }
+  .checkbox-hack__label {
+
+  }
+}
+
+.content__like-icon-wrapper {
+  @extend %columnCenter;
+  @extend %iconSize;
+  position: relative;
+  .icon {
+    i {
+      @extend %basicAbsolute;
+      transition: opacity 200ms;
+    }
+    .fa-solid {
+      background: linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
+      background-clip: text;
+      color: transparent;
+    }
+  }
+  &:has(:not(:checked)) {
+    .icon {
+      .fa-solid {
+        opacity: 0;
+      }
+      .fa-regular {
+        opacity: 1;
+      }
+    }
+  }
+  &:has(:checked) {
+    .icon {
+      .fa-solid {
+        opacity: 1;
+      }
+      .fa-regular {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.footer {
+  @extend %displayColumn;
+  background-color: $light-black;
+  padding: 30px 25px;
+  color: $white;
+  gap: 25px;
+
+  @media (min-width: 1024px) {
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+  .footer__title {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Shrikhand, serif;
+  }
+  .list_wrapper {
+    @extend %displayColumn;
+    gap: 7px;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 35px;
+    }
+
+    .link-list {
+      @extend %displayColumn;
+      font-size: 16px;
+      color: $white;
+      gap: 7px;
+      @media (min-width: 1024px) {
+        flex-direction: row;
+      }
+      .icon {
+        padding-right: 7px;
+      }
+    }
+  }
+}
+
+.section {
+  padding: 50px 20px;
+  margin-inline: auto;
+  .section__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}

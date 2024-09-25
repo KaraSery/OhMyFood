@@ -1,0 +1,38 @@
+%text-center {
+  text-align: center;
+}
+%displayColumn {
+  display: flex;
+  flex-direction: column;
+}
+%displayRow {
+  display: flex;
+  flex-direction: row;
+}
+%flexCenter {
+  align-items: center;
+  justify-content: center;
+}
+%rowCenter {
+  @extend %displayRow;
+  @extend %flexCenter;
+}
+%columnCenter {
+  @extend %displayColumn;
+  @extend %flexCenter;
+}
+
+%iconSize {
+  height: 24px;
+  width: 24px;
+  font-size: 24px;
+}
+%basicAbsolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+%basicPostion {
+  top: 0;
+  left: 0;
+}

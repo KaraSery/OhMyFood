@@ -1,26 +1,15 @@
-@import "../base.scss";
+@import "base";
 
 @mixin menu-list-item-counter {
-  @for $i from 0 through 40 {
+  @for $i from 1 through 20 {
     li:nth-of-type(#{$i}) {
       --li: #{$i}
     }
   }
 }
-@mixin menu-list-counter {
-  @for $i from 0 through 12 {
-    > ul:nth-of-type(#{$i}) {
-      --ul: #{$i}
-    }
-  }
-}
-
-
 .header {
+  @extend %rowCenter;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 17px;
   box-shadow: $shadow-light-sm;
   @media (min-width: 1024px) {
@@ -40,7 +29,6 @@
     }
   }
 }
-
 .hero {
   height: 220px;
   width: 100%;
@@ -50,9 +38,7 @@
     object-fit: cover;
   }
 }
-
 .menu-section {
-
   position: relative;
   z-index: 1;
   width: 100%;
@@ -65,11 +51,10 @@
     padding-top: 50px;
   }
   .section__title {
+    @extend %displayRow;
+    justify-content: space-between;
     font-family: "Shrikhand", serif;
     font-weight: 500;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     @media (min-width: 1024px) {
       justify-content: center;
       gap: 24px;
@@ -77,8 +62,7 @@
   }
   .menu-list {
     @include menu-list-item-counter();
-    display: flex;
-    flex-direction: column;
+    @extend %displayColumn;
     gap: 12px;
     list-style: none;
     max-width: 728px;
@@ -141,24 +125,19 @@
         }
       }
       .checkbox-hack {
+        @extend %basicAbsolute;
         cursor: pointer;
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
         display: block;
       }
       .is-selected {
         // use padding instead of width to get a slide effect rather than widening on select
+        @extend %rowCenter;
         transition: all 0.5s ease;
         width: 0;
         overflow: hidden;
         background-color: $color-tertiary;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         color: $white;
@@ -183,25 +162,3 @@
 }
 
 
-@keyframes menu-list-item-begin {
-  0% {
-    transform: translateX(120%);
-    opacity: 0;
-  }
-  85% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-
-@keyframes choice-select {
-  0% {
-    padding-inline: 0px;
-  }
-  100% {
-    padding-inline: 15px;
-  }
-}
