@@ -2,7 +2,7 @@
 
 .main-loader {
   @extend %rowCenter;
-  animation: main-wrapper .3s ease .3s forwards;
+  animation: main-wrapper .3s ease 2s forwards;
   z-index: 200;
   position: fixed;
   top: 0;

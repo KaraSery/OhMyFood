@@ -227,7 +227,7 @@ li {
 }
 
 .main-loader {
-  animation: main-wrapper 0.3s ease 0.3s forwards;
+  animation: main-wrapper 0.3s ease 2s forwards;
   z-index: 200;
   position: fixed;
   top: 0;
