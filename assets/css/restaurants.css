@@ -17,6 +17,17 @@
   justify-content: center;
 }
 
+.menu-section .menu-list .menu-list__card .card-content .name-and-description, .menu-section .menu-list .menu-list__card .card-content, .menu-section .menu-list .menu-list__card .card-content .name-and-description .description, .menu-section .menu-list .menu-list__card .card-content .name-and-description .name {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.menu-section .menu-list .menu-list__card .card-content .name-and-description .description, .menu-section .menu-list .menu-list__card .card-content .name-and-description .name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .content__like-icon-wrapper {
   height: 24px;
   width: 24px;
@@ -85,6 +96,17 @@
 .menu-section .menu-list .menu-list__card .is-selected, .header, .content__like-icon-wrapper {
   align-items: center;
   justify-content: center;
+}
+
+.menu-section .menu-list .menu-list__card .card-content .name-and-description, .menu-section .menu-list .menu-list__card .card-content, .menu-section .menu-list .menu-list__card .card-content .name-and-description .description, .menu-section .menu-list .menu-list__card .card-content .name-and-description .name {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.menu-section .menu-list .menu-list__card .card-content .name-and-description .description, .menu-section .menu-list .menu-list__card .card-content .name-and-description .name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content__like-icon-wrapper {
@@ -399,9 +421,6 @@ li {
 .menu-section .menu-list .menu-list__card .card-content .price {
   align-self: end;
   font-weight: 500;
-}
-.menu-section .menu-list .menu-list__card .card-content .name-and-description {
-  width: 100%;
 }
 .menu-section .menu-list .menu-list__card .card-content .name-and-description .name {
   font-size: 18px;

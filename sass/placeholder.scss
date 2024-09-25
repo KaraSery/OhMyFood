@@ -22,6 +22,20 @@
   @extend %flexCenter;
 }
 
+%maxRowSpace {
+  // Usefull in flexbox when we want to make flex item take all available space
+  width: 100%;
+  max-width:100%;
+  overflow: hidden;
+}
+%textEllipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+%textEllipsisMaxRowSpace {
+  @extend %textEllipsis;
+  @extend %maxRowSpace;
+}
 %iconSize {
   height: 24px;
   width: 24px;
